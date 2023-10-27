@@ -58,5 +58,6 @@ services:
       MONGO_INITDB_DATABASE: logs
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: password
+      DSN: "mongodb://mongo:27017"
     volumes:
       - ./db-data/mongo/:/data/db

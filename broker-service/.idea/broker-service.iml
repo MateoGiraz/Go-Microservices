@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="front-end" />
     <orderEntry type="module" module-name="authhentication-service" />
     <orderEntry type="module" module-name="auth-service" />
+    <orderEntry type="module" module-name="logger-service" />
   </component>
 </module>

@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/../authhentication-service/.idea/authhentication-service.iml" filepath="$PROJECT_DIR$/../authhentication-service/.idea/authhentication-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/broker-service.iml" filepath="$PROJECT_DIR$/.idea/broker-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../front-end/.idea/front-end.iml" filepath="$PROJECT_DIR$/../front-end/.idea/front-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../logger-service/.idea/logger-service.iml" filepath="$PROJECT_DIR$/../logger-service/.idea/logger-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../project/.idea/project.iml" filepath="$PROJECT_DIR$/../project/.idea/project.iml" />
     </modules>
   </component>

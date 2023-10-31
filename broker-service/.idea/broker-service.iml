@@ -10,5 +10,6 @@
     <orderEntry type="module" module-name="authhentication-service" />
     <orderEntry type="module" module-name="auth-service" />
     <orderEntry type="module" module-name="logger-service" />
+    <orderEntry type="module" module-name="mail-service" />
   </component>
 </module>

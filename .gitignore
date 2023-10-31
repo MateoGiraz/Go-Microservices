@@ -15,6 +15,9 @@
 *.so
 *.dylib
 
+#database data
+db-data/
+
 # Test binary, built with `go test -c`
 *.test
 

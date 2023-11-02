@@ -25,6 +25,6 @@ func (r *RPCServer) LogInfo(payload RPCPayload, resp *string) error {
 		log.Println("error writing to mongo", err)
 	}
 
-	*resp = "Processed payload via RPC:" + payload.Name
+	*resp = "logged via RPC"
 	return nil
 }

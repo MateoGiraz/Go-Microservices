@@ -1,18 +1,17 @@
 version: '3'
 
 services:
-
   caddy:
     image: mategz/micro-caddy:1.0.0
     deploy:
       mode: replicated
       replicas: 1
     ports:
-      - "80:80"
-      - "443:443"
+      - '80:80'
+      - '443:443'
     volumes:
-      - "caddy_data:/data"
-      - "caddy_config:/config"
+      - 'caddy_data:/data'
+      - 'caddy_config:/config'
 
   broker-service:
     image: mategz/broker-service:1.0.1
@@ -32,7 +31,7 @@ services:
       mode: replicated
       replicas: 1
     environment:
-      DSN: "postgresql://postgres:password@host.docker.internal:5432/users"
+      DSN: 'postgresql://postgres:password@host.docker.internal:5432/users'
 
   logger-service:
     image: mategz/logger-service:1.0.0
@@ -50,9 +49,9 @@ services:
       MAIL_HOST: mailhog
       MAIL_PORT: 1025
       MAIL_ENCRYPTION: none
-      MAIL_PASSWORD: ""
-      MAIL_USERNAME: ""
-      FROM_NAME: "John Smith"
+      MAIL_PASSWORD: ''
+      MAIL_USERNAME: ''
+      FROM_NAME: 'John Smith'
       FROM_ADDRESS: john.smith@example.com
 
   front-service:
@@ -61,12 +60,12 @@ services:
       mode: replicated
       replicas: 1
     environment:
-      BROKER_URL: "http://backend"
+      BROKER_URL: 'http://backend'
 
   postgres:
     image: 'postgres:latest'
     ports:
-      - "5432:5432"
+      - '5432:5432'
     deploy:
       mode: replicated
       replicas: 1
@@ -80,22 +79,20 @@ services:
   mongo:
     image: 'mongo:4.2.16-bionic'
     ports:
-      - "27017:27017"
+      - '27017:27017'
     deploy:
       mode: global
     environment:
-      DSN: "mongodb://mongo:27017"
+      DSN: 'mongodb://mongo:27017'
       MONGO_INITDB_DATABASE: logs
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: password
-    volumes:
-      - ./db-data/mongo/:/data/db
 
   mailhog:
     image: 'anatomicjc/mailhog:latest'
     ports:
-      - "1025:1025"
-      - "8025:8025"
+      - '1025:1025'
+      - '8025:8025'
     deploy:
       mode: global
 
